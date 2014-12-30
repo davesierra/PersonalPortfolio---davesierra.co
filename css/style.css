@@ -163,7 +163,7 @@ Typography
   font-style: normal;
 }
 body {
-  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #333437;
   font-size: 16px;
   line-height: 24px;
@@ -252,6 +252,7 @@ span.email-info {
   float: right;
   line-height: 42px;
 }
+
 /*----------------------------------------------------------
 Portfolio
 ----------------------------------------------------------*/
@@ -263,6 +264,18 @@ Portfolio
 .item img {
   width: 290px;
 }
+
+/*----------------------------------------------------------
+  Theme Styles
+----------------------------------------------------------*/
+.wrapper.black {
+  color: black;
+}
+.wrapper.white {
+  color: white;
+}
+
+
 /*----------------------------------------------------------
 Misc
 ----------------------------------------------------------*/
@@ -302,12 +315,20 @@ footer {
   padding: 10px;
   color: #CCC;
 }
+
+footer .container {
+  text-align:center;
+}
+
 div.pp_default .pp_description {
   margin: 5px 50px 5px 120px;
 }
+
+
 /*----------------------------------------------------------
 Award Medal Animation
 ----------------------------------------------------------*/
+
 div.strap,
 div.medal {
   background-image: url(../images/award-hover.png);
@@ -359,7 +380,10 @@ a.award:hover div.medal {
   animation: medalSwing 0.8s 1 ease-out;
   -webkit-animation: medalSwing 0.8s 1 ease-out;
 }
-/* Animation */
+
+
+/* Animation 
+--------------*/
 @keyframes awardAnimation {
   0% {
     top: -4px;
@@ -388,28 +412,23 @@ a.award:hover div.medal {
     -webkit-transform: rotate(0deg);
   }
 }
+
 @keyframes medalSwing {
-  0% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  0% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
 }
 @-webkit-keyframes medalSwing {
-  0% {
-    -webkit-transform: rotate(-5deg);
-  }
-  50% {
-    -webkit-transform: rotate(5deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-  }
+  0% { -webkit-transform: rotate(-5deg); }
+  50% { -webkit-transform: rotate(5deg); }
+  100% { -webkit-transform: rotate(0deg); }
 }
+
+
+
+
+
+
 /*----------------------------------------------------------
 Media Queries
 ----------------------------------------------------------*/
