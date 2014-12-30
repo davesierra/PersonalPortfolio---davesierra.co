@@ -1,0 +1,39 @@
+[
+	{
+		"name": "Original",
+		"image": "images/page-bg-img.jpg",
+		"color": "black",
+		"credit": {
+			"name": "None",
+			"link": "#"
+		}
+	},
+	{
+		"name": "Road",
+		"image": "https://ununsplash.imgix.net/photo-1416862291207-4ca732144d83?q=75&fm=jpg&s=df8c00463528dcbff9e2f80eb9c09516",
+		"color": "white",
+		"credit": {
+			"name": "Bec Brown",
+			"link": "https://unsplash.com/bec_brown"
+		}
+	},
+	{
+		"name": "Mountain",
+		"image": "https://ununsplash.imgix.net/photo-1417021423914-070979c8eb34?q=75&fm=jpg&s=55746bd56e02a131b1e48c12196ea866",
+		"color": "black",
+		"credit": {
+			"name": "René Reichelt",
+			"link": "https://unsplash.com/kaarl"
+		}
+	},
+	{
+		"name": "Railroad",
+		"image": "https://unsplash.imgix.net/reserve/OQx70jjBSLOMI5ackhxm_urbex-ppc-030.jpg?q=75&fm=jpg&s=a0a7ff653fa7e21c2dd006f75933c778",
+		"color": "white",
+		"credit": {
+			"name": "Antoine Beauvillain",
+			"link": "https://unsplash.com/antoinebeauvillain"
+		}
+	}
+]
+
