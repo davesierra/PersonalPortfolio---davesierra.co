@@ -26,8 +26,10 @@
 	<link rel="shortcut icon" href="images/favicon.png">
 	
 	<!-- CSS -->
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/prettyPhoto.css">
+	<link rel="stylesheet" href="css/tooltipster.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	
     <!--[if IE]>
     	<link rel="stylesheet" type="text/css" href="css/ie.css" />
@@ -43,133 +45,9 @@
 	<script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.lettering.min.js"></script>
     
-    <link rel="stylesheet" type="text/css" href="js/tooltipster/css/tooltipster.css" />
-    <script type="text/javascript" src="js/tooltipster/js/jquery.tooltipster.min.js"></script>
-    
-	<script type="text/javascript">
+    <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
 
-    function slabTextHeadlines() {
-        $("h1.slabtext-container").slabText({
-            // Don't slabtext the headers if the viewport is under 380px
-            "viewportBreakpoint":380,
-			"minCharsPerLine":10
-        });
-    };
-
-     $(window).load(function() {
-        setTimeout(slabTextHeadlines, 0);
-    });
-
-
-	$(document).ready(function(){
-		//BACKSTRETCH
-		$.backstretch("images/page-bg-img.jpg");
-		
-		//MASONRY
-		var $container = $('.portfolio');
-		$container.imagesLoaded(function(){
-	  	$container.masonry({
-	    	itemSelector : '.item',
-	    	isFitWidth: true,
-	    	isAnimated: true
-	  		});
-		});
-		
-		//PRETTYPHOTO
-    	$("a[rel^='prettyPhoto']").prettyPhoto({
-			custom_markup: '<div class="pp_inline">SAMPLE</div>'
-		});
-		//$('h1.lettering span').lettering('lines');
-		
-		//TOOLTIPSTER PLUGIN
-		$('.tooltip').tooltipster({
-			animation: 'grow',
-			delay: 100,
-			position: 'top-left'
-		});
- 	 });
-
-	</script>
-	
-    <style>
-    	span[class*="line"] {display:block;}
-		.portfolio{margin-top:0px;}
-		h2{}
-		.g0ldman li img{border:5px solid blue;}
-		
-		a.fadeOut{
-			color:black; text-decoration:none; border-bottom: 0.075em solid rgba(0,0,0,0.2);
-			-webkit-transition: opacity .75s ease;
-			-moz-transition: opacity .75s ease;
-			-o-transition: opacity .75s ease;
-			transition: opacity .45s ease;}
-		a.fadeOut:hover{opacity:.35;}
-		
-		#social-icons a{
-			opacity:.75;
-			-webkit-transition: opacity .5s ease;
-			-moz-transition: opacity .5s ease;
-			-o-transition: opacity .5s ease;
-			transition: opacity .5s ease;}
-		#social-icons a:hover{opacity:1;}
-		
-		footer{background-color:black; padding:10px; color:#CCC;}
-		div.pp_default .pp_description {margin: 5px 50px 5px 120px;}
-		
-		/* AWARD MEDAL SWING IN */
-		div.strap, 
-		div.medal{
-			background-image:url(images/award-hover.png);
-			height:49px; width:42px; position: absolute;}
-		
-		div.strap{background-position:0 0;}
-		div.medal{background-position:0 -49px;}
-		
-		div.award{
-			width:auto;
-			position: absolute;top:-5px; right:38px;
-			opacity:0;
-			transform:rotate(-20deg);
-			-webkit-transform:rotate(-20deg);}
-			
-		a.award:hover div.award{
-			top:-5px; right:38px;opacity:1; 
-			transform:rotate(0deg);
-			-webkit-transform:rotate(0deg);}
-		a.award:hover div.award{
-			animation: 	awardAnimation .08s 1 ease-in;
-			-webkit-animation: 	awardAnimation .08s 1 ease-in;}
-		a.award:hover div.medal{
-			animation:	medalSwing .8s 1 ease-out;
-			-webkit-animation:	medalSwing .8s 1 ease-out;}
-			
-		/* Animation */
-		@keyframes awardAnimation {
-			0% 		{top:-4px; right:34px; opacity:0;
-					transform:rotate(-20deg);}
-					
-			100%	{top:-5px; right:38px; opacity:1; 
-					transform:rotate(0deg);}
-		}
-		@-webkit-keyframes awardAnimation {
-			0% 		{top:-4px; right:34px; opacity:0;
-					-webkit-transform:rotate(-20deg);}
-					
-			100%	{top:-5px; right:38px; opacity:1; 
-					-webkit-transform:rotate(0deg);}
-		}
-		
-		@keyframes medalSwing {
-			0% 		{transform: rotate(-5deg);}
-			50%		{transform: rotate(5deg);}		
-			100%	{transform: rotate(0deg);}
-		}
-		@-webkit-keyframes medalSwing {
-			0% 		{-webkit-transform: rotate(-5deg);}
-			50%		{-webkit-transform: rotate(5deg);}		
-			100%	{-webkit-transform: rotate(0deg);}
-		}
-    </style>
+    <script type="text/javascript" src="js/scripts.js"></script>
     
 </head>
 
